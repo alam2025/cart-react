@@ -3,12 +3,13 @@
       border-radius: 8px;
       position: relative;
       padding-bottom: 20px;
+     
 
 }
 
 .product img {
-      width: 286px;
-      height: 286px;
+      width:250px;
+      height: 250px;
       padding: 7px;
       border-radius: 15px;
 }
@@ -19,11 +20,15 @@
       font-family: 'Lato';
       font-style: normal;
       font-weight: 400;
-      font-size: 21px;
+      font-size: 18px;
       line-height: 25px;
       letter-spacing: 0.0015em;
 
       color: #0E161A;
+}
+
+.manufacturer{
+      margin-bottom: 0;
 }
 
 .product-info {

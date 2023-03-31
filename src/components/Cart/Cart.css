@@ -1,0 +1,14 @@
+.cart{
+      position: sticky;
+      top: 100px;
+}
+.summery-h2 {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+}
+.cart p{
+      font-size: 13px;
+}
