@@ -1,0 +1,15 @@
+nav{
+      background-color: #1C2B35;
+      height: 80px;
+}
+.header{
+      padding: 0 60px 0 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.header a{
+      text-decoration: none;
+      color: #fff;
+      margin-left: 2rem;
+}
