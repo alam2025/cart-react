@@ -21,3 +21,7 @@
       padding: 28px 28px;
       background: rgba(255, 153, 0, 0.3);
 }
+
+.container{
+      @apply w-11/12 flex flex-col md:flex-row mx-10;
+}

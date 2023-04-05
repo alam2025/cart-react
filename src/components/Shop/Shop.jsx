@@ -3,8 +3,11 @@ import { addToDb, getShoppingCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
+import { useLoaderData } from 'react-router-dom';
 
 const Shop = () => {
+      // const products =useLoaderData();
+      // console.log(products);
       const [cart, setCart]=useState([]);
       const [products, setProducts]=useState([]);
       useEffect(()=>{
@@ -55,8 +58,8 @@ const Shop = () => {
    
       }
       return (
-            <div className='shop-container'>
-                  <div className="product-container">
+            <div className='shop-container flex flex-col md:flex-row'>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-col-3 lg:grid-cols-3 gap-4">
                         {
                               products.map(product=><Product
                               product={product}
@@ -66,7 +69,7 @@ const Shop = () => {
                                           )
                         }
                   </div>
-                  <div className="card-container">
+                  <div className="card-container md:w-[30%] w-[100%] rounded-lg ">
                        <Cart 
                        cart={cart}
                        />

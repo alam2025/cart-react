@@ -16,13 +16,13 @@ const Cart = ({cart}) => {
       const tax= (total*7)/100;
       const grandTotal= total + shipping + tax;
       return (
-            <div className='cart'>
-                  <h5 className='summery-h2'> Order Summery</h5>
-                  <p>Selected Items : {items}</p>
-                  <p>Total Price : ${total}</p>
-                  <p>Total Shipping Charge : ${shipping}</p>
-                  <p>Tax : ${tax.toFixed(2)}</p>
-                  <h5>Grand Total : ${grandTotal.toFixed(2)}</h5>
+            <div className='cart flex flex-col gap-4'>
+                  <h5 className='text-xl font-semibold underline'> Order Summery</h5>
+                  <p className=' text-base'>Selected Items : {items}</p>
+                  <p className=' text-base'>Total Price : ${total}</p>
+                  <p className=' text-base'> Total Shipping Charge : ${shipping}</p>
+                  <p className=' text-base'>Tax : ${tax.toFixed(2)}</p>
+                  <h5 className=' text-lg font-medium'>Grand Total : ${grandTotal.toFixed(2)}</h5>
             </div>
       );
 };
